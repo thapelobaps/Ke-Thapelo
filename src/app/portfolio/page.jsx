@@ -2,10 +2,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import "./portfolio.css";
-
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ReactLenis } from "@studio-freight/react-lenis";
+import Lenis from "lenis";
 
 const Page = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -23,6 +22,23 @@ const Page = () => {
     { name: "Secure Vote", img: "project-9.jpg", size: "sm" },
   ];
 
+  // Initialize Lenis for smooth scrolling
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    return () => lenis.destroy();
+  }, []);
+
   useEffect(() => {
     const loadImages = async () => {
       const imagePromises = projects.map((project) => {
@@ -39,7 +55,7 @@ const Page = () => {
     };
 
     loadImages();
-  }, []);
+  }, []); // Empty dependency array since projects is static
 
   useGSAP(
     () => {
@@ -121,19 +137,17 @@ const Page = () => {
   };
 
   return (
-    <ReactLenis root>
-      <div
-        className={`portfolio-page ${isLoaded ? "loaded" : ""}`}
-        ref={containerRef}
-      >
-        <div className="container">
-          <div className="portfolio-header">
-            <h1>Portfolio</h1>
-          </div>
-          {isLoaded && renderProjectRows()}
+    <div
+      className={`portfolio-page ${isLoaded ? "loaded" : ""}`}
+      ref={containerRef}
+    >
+      <div className="container">
+        <div className="portfolio-header">
+          <h1>Portfolio</h1>
         </div>
+        {isLoaded && renderProjectRows()}
       </div>
-    </ReactLenis>
+    </div>
   );
 };
 
