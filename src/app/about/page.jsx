@@ -162,7 +162,7 @@ const AboutPage = () => {
                 <h3>
                   Passionate about crafting immersive digital experiences,
                   Stefan Markovic blends design and code to push the boundaries
-                  of what’s possible on the web. His approach focuses on
+                  of whats possible on the web. His approach focuses on
                   creating seamless, responsive, and engaging interfaces that
                   leave a lasting impact.
                 </h3>
@@ -177,8 +177,8 @@ const AboutPage = () => {
                 <br />
                 <h3>
                   Driven by curiosity and innovation, Stefan constantly explores
-                  new tools, techniques, and frameworks. He’s not just a
-                  developer—he’s a problem solver, ready to bring your vision to
+                  new tools, techniques, and frameworks. Hes not just a
+                  developer—hes a problem solver, ready to bring your vision to
                   life with a unique and modern touch.
                 </h3>
               </div>
