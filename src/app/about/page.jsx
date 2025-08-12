@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 import "./about.css";
 
 import gsap from "gsap";
@@ -150,7 +151,13 @@ const AboutPage = () => {
           <div className="about-intro">
             <div className="col about-portrait-img">
               <div className="about-portrait">
-                <img src="/about/portrait-min.jpg" alt="Portrait" />
+                {/* adjust width/height to real image dimensions */}
+                <Image
+                  src="/about/portrait-min.jpg"
+                  alt="Portrait"
+                  width={400}
+                  height={500}
+                />
               </div>
             </div>
             <div className="col about-copy-wrapper">
@@ -162,7 +169,7 @@ const AboutPage = () => {
                 <h3>
                   Passionate about crafting immersive digital experiences,
                   Stefan Markovic blends design and code to push the boundaries
-                  of whats possible on the web. His approach focuses on
+                  of what&apos;s possible on the web. His approach focuses on
                   creating seamless, responsive, and engaging interfaces that
                   leave a lasting impact.
                 </h3>
@@ -170,16 +177,17 @@ const AboutPage = () => {
                 <h3>
                   With a strong foundation in JavaScript, React, and modern web
                   technologies, Stefan excels at turning complex ideas into
-                  interactive realities. Whether it's a sleek portfolio site, a
-                  dynamic web app, or a mesmerizing animation, he approaches
-                  each project with creativity and technical precision.
+                  interactive realities. Whether it&apos;s a sleek portfolio
+                  site, a dynamic web app, or a mesmerizing animation, he
+                  approaches each project with creativity and technical
+                  precision.
                 </h3>
                 <br />
                 <h3>
                   Driven by curiosity and innovation, Stefan constantly explores
-                  new tools, techniques, and frameworks. Hes not just a
-                  developer—hes a problem solver, ready to bring your vision to
-                  life with a unique and modern touch.
+                  new tools, techniques, and frameworks. He&apos;s not just a
+                  developer—he&apos;s a problem solver, ready to bring your
+                  vision to life with a unique and modern touch.
                 </h3>
               </div>
             </div>
@@ -187,7 +195,13 @@ const AboutPage = () => {
         </div>
 
         <div className="about-hero-img" ref={heroImgRef}>
-          <img src="/about/portrait-2-min.jpg" alt="Portrait" />
+          {/* adjust width/height to real image dimensions */}
+          <Image
+            src="/about/portrait-2-min.jpg"
+            alt="Portrait"
+            width={1200}
+            height={700}
+          />
         </div>
 
         <div className="container">
@@ -216,3 +230,4 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
