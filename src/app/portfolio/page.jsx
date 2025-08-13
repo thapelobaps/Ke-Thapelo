@@ -8,6 +8,7 @@ import Lenis from "lenis";
 
 const Page = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [loadError, setLoadError] = useState(null);
   const containerRef = useRef(null);
 
   const projects = [
@@ -15,8 +16,8 @@ const Page = () => {
     { name: "Smart Living", img: "project-2.jpg", size: "sm" },
     { name: "Stuff Management System", img: "project-14.png", size: "lg" },
     { name: "VR Fitness", img: "project-4.jpg", size: "sm" },
-    { name: "MIni Blog", img: "project-5.png", size: "lg" },
-    { name: "Finacial Systems", img: "project-13.jpg", size: "lg" },
+    { name: "Mini Blog", img: "project-5.png", size: "lg" },
+    { name: "Financial Systems", img: "project-13.jpg", size: "lg" },
     { name: "SuperHero API", img: "project-7.png", size: "lg" },
     { name: "Drone Post", img: "project-8.jpg", size: "lg" },
     { name: "Employee Management System", img: "project-6.png", size: "sm" },
@@ -45,13 +46,21 @@ const Page = () => {
         return new Promise((resolve, reject) => {
           const img = new Image();
           img.src = `/portfolio/${project.img}`;
-          img.onload = resolve;
-          img.onerror = reject;
+          img.onload = () => resolve();
+          img.onerror = () => {
+            console.error(`Failed to load image: /portfolio/${project.img}`);
+            reject(new Error(`Failed to load image: /portfolio/${project.img}`));
+          };
         });
       });
 
-      await Promise.all(imagePromises);
-      setIsLoaded(true);
+      try {
+        await Promise.all(imagePromises);
+        setIsLoaded(true);
+      } catch (error) {
+        setLoadError(error.message);
+        console.error("Image loading error:", error);
+      }
     };
 
     loadImages();
@@ -59,19 +68,21 @@ const Page = () => {
 
   useGSAP(
     () => {
-      if (isLoaded && containerRef.current) {
-        const header = containerRef.current.querySelector(
-          ".portfolio-header h1"
-        );
-        const cols = containerRef.current.querySelectorAll(".col");
+      if (!isLoaded || !containerRef.current) return;
 
+      const header = containerRef.current.querySelector(".portfolio-header h1");
+      const cols = containerRef.current.querySelectorAll(".col");
+
+      if (header) {
         gsap.to(header, {
           y: 0,
           delay: 0.75,
           duration: 1.5,
           ease: "power4.out",
         });
+      }
 
+      if (cols.length) {
         gsap.to(cols, {
           clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
           duration: 1.5,
@@ -84,31 +95,33 @@ const Page = () => {
           const img = col.querySelector("img");
           const titleP = col.querySelector(".project-title h3");
 
-          col.addEventListener("mouseenter", () => {
-            gsap.to(img, {
-              scale: 1.25,
-              duration: 2,
-              ease: "power4.out",
+          if (img && titleP) {
+            col.addEventListener("mouseenter", () => {
+              gsap.to(img, {
+                scale: 1.25,
+                duration: 2,
+                ease: "power4.out",
+              });
+              gsap.to(titleP, {
+                y: 0,
+                duration: 1,
+                ease: "power4.out",
+              });
             });
-            gsap.to(titleP, {
-              y: 0,
-              duration: 1,
-              ease: "power4.out",
-            });
-          });
 
-          col.addEventListener("mouseleave", () => {
-            gsap.to(img, {
-              scale: 1,
-              duration: 2,
-              ease: "power4.out",
+            col.addEventListener("mouseleave", () => {
+              gsap.to(img, {
+                scale: 1,
+                duration: 2,
+                ease: "power4.out",
+              });
+              gsap.to(titleP, {
+                y: 24,
+                duration: 1,
+                ease: "power4.out",
+              });
             });
-            gsap.to(titleP, {
-              y: 24,
-              duration: 1,
-              ease: "power4.out",
-            });
-          });
+          }
         });
       }
     },
@@ -145,6 +158,11 @@ const Page = () => {
         <div className="portfolio-header">
           <h1>Portfolio</h1>
         </div>
+        {loadError && (
+          <div className="error-message">
+            <p>Error loading images: {loadError}</p>
+          </div>
+        )}
         {isLoaded && renderProjectRows()}
       </div>
     </div>

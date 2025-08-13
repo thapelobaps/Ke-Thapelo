@@ -189,28 +189,18 @@ const AboutPage = () => {
 
             <div className="about-copy" ref={aboutCopyRef}>
               <h3>
-                Passionate about crafting immersive digital experiences,
-                Stefan Markovic blends design and code to push the boundaries
-                of whats possible on the web. His approach focuses on
-                creating seamless, responsive, and engaging interfaces that
-                leave a lasting impact.
+                Passionate about designing intuitive and impactful digital experiences, Thapelo Bapela, known as Thapelobaps, blends UI/UX expertise with a robust technical skill set to create user-centered solutions for INNVTVE. His approach emphasizes seamless, responsive, and engaging interfaces that resonate with users.
               </h3>
               <br />
               <h3>
-                With a strong foundation in JavaScript, React, and modern web
-                technologies, Stefan excels at turning complex ideas into
-                interactive realities. Whether its a sleek portfolio site, a
-                dynamic web app, or a mesmerizing animation, he approaches
-                each project with creativity and technical precision.
+                With proficiency in JavaScript, React.js, .NET, Python, and modern web technologies like Gsap and Next.js Thapelo excels at transforming complex concepts into functional, visually stunning realities. His expertise extends to backend development with .NET Core, Entity Framework, and SQL Server, as well as data analysis using Apache Spark, Pandas, and Power BI. From dynamic web apps to intricate booking systems, he tackles each project with creativity and precision.
               </h3>
               <br />
               <h3>
-                Driven by curiosity and innovation, Stefan constantly explores
-                new tools, techniques, and frameworks. Hes not just a
-                developer—hes a problem solver, ready to bring your vision to
-                life with a unique and modern touch.
+                Driven by innovation and a commitment to excellence, Thapelo leverages tools like Azure DevOps and Git in Agile environments to deliver high-quality solutions. With experience in Linux, he’s a versatile problem solver dedicated to bringing your vision to life with a modern, user-first approach.
               </h3>
             </div>
+
           </div>
         </div>
       </div>
