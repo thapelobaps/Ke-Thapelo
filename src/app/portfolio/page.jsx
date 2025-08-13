@@ -14,13 +14,13 @@ const Page = () => {
   const projects = [
     { name: "Dental Booking System", img: "project-1.png", size: "lg" },
     { name: "Smart Living", img: "project-2.jpg", size: "sm" },
-    { name: "Stuff Management System", img: "project-14.png", size: "lg" },
+    { name: "Stuff Management System", img: "project-14.jpg", size: "lg" },
     { name: "VR Fitness", img: "project-4.jpg", size: "sm" },
-    { name: "Mini Blog", img: "project-5.png", size: "lg" },
+    { name: "Mini Blog", img: "project-5.jpg", size: "lg" },
     { name: "Financial Systems", img: "project-13.jpg", size: "lg" },
     { name: "SuperHero API", img: "project-7.png", size: "lg" },
     { name: "Drone Post", img: "project-8.jpg", size: "lg" },
-    { name: "Employee Management System", img: "project-6.png", size: "sm" },
+    { name: "Employee Management System", img: "project-6.jpg", size: "sm" },
   ];
 
   // Initialize Lenis for smooth scrolling

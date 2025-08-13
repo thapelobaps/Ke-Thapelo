@@ -161,7 +161,7 @@ const Page = () => {
           </div>
 
           <div className="img img-3" ref={(el) => (imgRefs.current[1] = el)}>
-            <img src="/portfolio/project-5.png" alt="Banking System Ixbank" />
+            <img src="/portfolio/project-5.jpg" alt="Banking System Ixbank" />
           </div>
 
           <div className="copy">
@@ -191,7 +191,7 @@ const Page = () => {
           </div>
 
           <div className="img img-6" ref={(el) => (imgRefs.current[4] = el)}>
-            <img src="/portfolio/project-14.png" alt="Employee Management System" />
+            <img src="/portfolio/project-14.jpg" alt="Employee Management System" />
           </div>
 
           <div className="copy">
