@@ -54,18 +54,19 @@ const Page = () => {
     <div className="contact-page" ref={container}>
       <div className="container">
         <div className="col">
-          <div className="where" ref={(el) => (sectionsRef.current[0] = el)}>
+
+        <div className="where" ref={(el) => (sectionsRef.current[0] = el)}>
             <div className="title">
               <p>Where</p>
             </div>
             <div className="item">
-              <p>Spazio Alva</p>
+              <p>Thapelo Bapela</p>
             </div>
             <div className="item">
-              <p>Vicolo Terrà, 5 VR/B</p>
+              <p>123 Innovation Street, Pretoria East</p>
             </div>
             <div className="item">
-              <p>37129 . Verona . Italy</p>
+              <p>0081 · Pretoria · South Africa</p>
             </div>
           </div>
           <div className="vat" ref={(el) => (sectionsRef.current[1] = el)}>
@@ -73,9 +74,10 @@ const Page = () => {
               <p>VAT</p>
             </div>
             <div className="item">
-              <p>9724865620</p>
+              <p>1234567890</p> {/* Replace with your actual VAT number if available */}
             </div>
           </div>
+
         </div>
 
         <div className="col">
@@ -91,17 +93,17 @@ const Page = () => {
             </div>
             <div className="item">
               <p>
-                <a href="#">Instagram</a>
+                <a href="https://www.instagram.com/thapelobaps" target="_blank">Instagram</a>
               </p>
             </div>
             <div className="item">
               <p>
-                <a href="#">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/thapelo-bapela-859a5471/" target="_blank">LinkedIn</a>
               </p>
             </div>
             <div className="item">
               <p>
-                <a href="#">Vimeo</a>
+                <a href="https://www.github.com/thapelobaps" target="_blank">GitHub</a> {/* Update with your GitHub or Vimeo */}
               </p>
             </div>
           </div>
@@ -111,7 +113,7 @@ const Page = () => {
             </div>
             <div className="item">
               <p>
-                <a href="#">contact@codegrid.com</a>
+                <a href="mailto:thapelobaps@gmail.com">Thapelobaps@gmail.com</a>
               </p>
             </div>
           </div>

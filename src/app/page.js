@@ -78,7 +78,7 @@ export default function Home() {
       )}
       <div className="home-page" ref={containerRef}>
         <div className="hero-img">
-          <img src="/home/hero-img.jpg" alt="" />
+          <img src="/home/hero-img.png" alt="" />
         </div>
 
         <div className="hero-title">
@@ -86,7 +86,7 @@ export default function Home() {
             <h1>An independent developer</h1>
           </div>
           <div className="line">
-            <h1>based in Toronto</h1>
+            <h1>based in Pretoria 012</h1>
           </div>
         </div>
       </div>

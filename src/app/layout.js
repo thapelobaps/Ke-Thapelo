@@ -4,7 +4,7 @@ import "./globals.css";
 import Menu from "./components/Menu/Menu";
 
 export const metadata = {
-  title: "Stefan Markovic | Codegrid",
+  title: "Thapelo Bapela | Codegrid",
   description: "CGMWT September by Codegrid",
 };
 

@@ -6,22 +6,25 @@ export const links = [
   { label: "Contact", path: "/contact" },
 ];
 
+
+
 export const socials = [
-  { label: "Instagram", url: "https://instagram.com/codegridweb" },
-  { label: "LinkedIn", url: "https://linkedin.com/codegridweb" },
-  { label: "Twitter", url: "https://twitter.com/codegridweb" },
-  { label: "Facebook", url: "https://facebook.com/codegridweb" },
+  { label: "Instagram", url: "https://instagram.com/thapelobaps" },
+  { label: "LinkedIn", url: "https://linkedin.com/thapelobaps" },
+  { label: "X", url: "https://twitter.com/thapelobaps" },
+  { label: "Github", url: "https://github.com/thapelobaps" },
 ];
 
 export const address = [
-  "Stefan Markovic",
-  "9 quao Androe Rockfield",
-  "69001 Ontario",
-  "Canada",
+  "Thapelo Bapela",
+  "123 Innovation Street, Pretoria East",
+  "0081 Pretoria",
+  "South Africa",
 ];
 
 export const contactInfo = [
-  "contact@stefanmarkovic.fr",
-  "job@stefanmarkovic.fr",
-  "01 62 31 82 42",
+  "thapelobaps@gmail.com",
+  "thapelo@innvtve.co.za",
+  "+27 85 10 30 70",
 ];
+

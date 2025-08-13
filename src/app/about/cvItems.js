@@ -1,46 +1,44 @@
 export const cvItems = [
   {
-    name: "Lead Full Stack Developer & Project Manager at TechInnovate Solutions",
-    year: "2022 - Present",
+    name: "Junior Full Stack Developer at FNZ Group – Worked on secure financial platforms with .NET, React, WebApi, Blazor and SQL Sever",
+    year: "2023 - 2024",
   },
   {
-    name: "Senior Full Stack Developer specializing in React and Node.js at DataDrive Systems",
-    year: "2020 - 2022",
+    name: "Software Developer Intern at AWS – Built internal tools and client solutions using .NET and JavaScript",
+    year: "2022 - 2023",
   },
   {
-    name: "Frontend Developer focused on React and Vue.js at CreativeTech Studios",
-    year: "2019 - 2020",
-  },
-  {
-    name: "Junior Web Developer with emphasis on JavaScript and PHP at WebWizards Inc.",
-    year: "2017 - 2019",
-  },
-  {
-    name: "Web Development Intern learning MERN stack at CodeCrafters",
-    year: "2016 - 2017",
-  },
-  {
-    name: "Bachelor of Science in Computer Science, Tech University - Thesis on AI in Web Development",
-    year: "2013 - 2017",
-  },
-  {
-    name: "Freelance Web Designer specializing in WordPress and Shopify themes",
-    year: "2012 - 2016",
-  },
-  {
-    name: "Open Source Contributor to React Native project - Implemented key accessibility features",
-    year: "2018 - Present",
-  },
-  {
-    name: "Guest Lecturer on Modern Web Technologies at Local Community College",
+    name: "Freelance Developer – Created custom web apps and systems using ASP.NET, Blazor, and EF Core, React, Next.js",
     year: "2021 - Present",
   },
+
   {
-    name: "Published Author: 'Mastering Full Stack Development' by Tech Publishing House",
-    year: "2023",
+    name: "Founder & CTO at INNVTVE – Driving full-stack system developments and cloud architecture using .NET, Web API, React, Next.js, SQL, and Azure",
+    year: "2024 - Present",
   },
   {
-    name: "Co-founder and CTO of EdTech startup 'LearnLoop' - Developed MVP and secured seed funding",
-    year: "2021 - 2022",
+    name: "Lead Cloud Architect & Full Stack Developer at INNVTVE – Building scalable, modern web solutions for diverse industries",
+    year: "2024 - Present",
+  },
+
+  {
+    name: "Lead Developer for We-Care Dentist Project – Built modern booking system with .NET 9 Web API and Blazor WASM, React and SQL Server",
+    year: "2025",
+  },
+  {
+    name: "Qualified Systems Engineer – Developed projects in Arduino, ESP 35, Logic Desigh, Oracle Database, PLC, Unity for Game programing, .NET, and Web Development",
+    year: "2018 - 2022",
+  },
+  {
+    name: "AI & Cloud Projects – Delivered AI-driven supply chain solutions and high-demand mobile systems with Azure, AWS, and Kubernetes",
+    year: "2024 - Present",
+  },
+  {
+    name: "Mentor & Tech Educator – Led coding sessions and workshops using Micro:bit, C#, and web technologies for kids and beginners",
+    year: "2024 - 2025",
+  },
+  {
+    name: "Passionate about merging tech with impact – Whether building scalable SaaS, solving real-world problems, or mentoring the next generation",
+    year: "Ongoing",
   },
 ];

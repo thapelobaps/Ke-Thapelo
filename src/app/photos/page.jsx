@@ -25,7 +25,7 @@ const Photos = () => {
       );
 
       let currentImg = 1;
-      const totalSlides = 4;
+      const totalSlides = 8;
       let indicatorRotation = 0;
 
       function updateCounterAndTitlePosition() {
@@ -180,10 +180,14 @@ const Photos = () => {
 
         <div className="slider-title">
           <div className="slider-title-wrapper" ref={titlesRef}>
-            <p>The Revival Ensemble</p>
-            <p>Above The Canvas</p>
-            <p>Harmony in Every Note</p>
-            <p>Redefining Imagination</p>
+              <p>The Revival Ensemble</p>
+              <p>Above The Canvas</p>
+              <p>Harmony in Every Note</p>
+              <p>Redefining Imagination</p>
+              <p>Colors of Innovation</p>
+              <p>Symphony of Creativity</p>
+              <p>Visions in Motion</p>
+              <p>The Art of Possibility</p>
           </div>
         </div>
 
@@ -193,17 +197,21 @@ const Photos = () => {
             <p>2</p>
             <p>3</p>
             <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
           </div>
           <div>
             <p>&mdash;</p>
           </div>
           <div>
-            <p>4</p>
+            <p>8</p>
           </div>
         </div>
 
         <div className="slider-preview">
-          {[1, 2, 3, 4].map((num) => (
+          {[1, 2, 3, 4, 5, 6, 7, 8,].map((num) => (
             <div
               key={num}
               className={`preview ${num === 1 ? "active" : ""}`}

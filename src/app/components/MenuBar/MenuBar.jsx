@@ -11,11 +11,11 @@ const MenuBar = ({ isOpen, toggleMenu, closeMenu }) => {
       </div>
 
       <div className="logo" onClick={closeMenu}>
-        <Link href="/">Stefan Markovic</Link>
+        <Link href="/">Thapelo Bapela</Link>
       </div>
 
       <div className="portfolio-year">
-        <p>&copy; 2024</p>
+        <p>&copy; 2025</p>
       </div>
     </div>
   );

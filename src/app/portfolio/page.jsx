@@ -11,15 +11,15 @@ const Page = () => {
   const containerRef = useRef(null);
 
   const projects = [
-    { name: "Urban Oasis", img: "project-1.jpg", size: "lg" },
+    { name: "Dental Booking System", img: "project-1.png", size: "lg" },
     { name: "Smart Living", img: "project-2.jpg", size: "sm" },
-    { name: "Eco Fashion", img: "project-3.jpg", size: "lg" },
+    { name: "Stuff Management System", img: "project-14.png", size: "lg" },
     { name: "VR Fitness", img: "project-4.jpg", size: "sm" },
-    { name: "Clean Energy", img: "project-5.jpg", size: "lg" },
-    { name: "AR Learning", img: "project-6.jpg", size: "lg" },
-    { name: "Green Pack", img: "project-7.jpg", size: "lg" },
+    { name: "MIni Blog", img: "project-5.png", size: "lg" },
+    { name: "Finacial Systems", img: "project-13.jpg", size: "lg" },
+    { name: "SuperHero API", img: "project-7.png", size: "lg" },
     { name: "Drone Post", img: "project-8.jpg", size: "lg" },
-    { name: "Secure Vote", img: "project-9.jpg", size: "sm" },
+    { name: "Employee Management System", img: "project-6.png", size: "sm" },
   ];
 
   // Initialize Lenis for smooth scrolling
